@@ -43,7 +43,7 @@ spec:
         version: stable
     spec:
       containers:
-      - image: next-app:stable
+      - image: quanwei/next-app:stable
         name: next-app
         imagePullPolicy: IfNotPresent
         ports:
