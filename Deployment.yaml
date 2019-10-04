@@ -43,7 +43,7 @@ spec:
         version: stable
     spec:
       containers:
-      - image: next-app:latest
+      - image: next-app:stable
         name: next-app
         imagePullPolicy: IfNotPresent
         ports:
