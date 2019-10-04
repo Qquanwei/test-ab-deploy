@@ -35,6 +35,7 @@ spec:
   selector:
     matchLabels:
       app: web
+      version: test
   template:
     metadata:
       labels:
@@ -42,7 +43,7 @@ spec:
         version: test
     spec:
       containers:
-      - image: next-app:latest
+      - image: quanwei/next-app:test
         name: next-app
         imagePullPolicy: IfNotPresent
         ports:
