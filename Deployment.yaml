@@ -29,16 +29,18 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-deployment
+  name: app-deployment-stable
 spec:
   replicas: 2
   selector:
     matchLabels:
       app: web
+      version: stable
   template:
     metadata:
       labels:
         app: web
+        version: stable
     spec:
       containers:
       - image: next-app:latest
