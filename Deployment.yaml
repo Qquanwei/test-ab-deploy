@@ -29,7 +29,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-deployment
+  name: app-deployment-test
 spec:
   replicas: 2
   selector:
@@ -39,6 +39,7 @@ spec:
     metadata:
       labels:
         app: web
+        version: test
     spec:
       containers:
       - image: next-app:latest
