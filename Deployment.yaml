@@ -20,6 +20,7 @@ spec:
   type: NodePort
   selector:
     app: web
+    version: stable
   ports:
   - port: 80
     targetPort: 3000
